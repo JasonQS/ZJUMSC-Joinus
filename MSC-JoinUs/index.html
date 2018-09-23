@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>浙大MSC纳新</title>
+    <meta name="author" content="Jason"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="http://cdn.qsboy.com/httnb/fullpage.css" rel="stylesheet"/>
+    <link href="http://cdn.qsboy.com/httnb/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bs.css" rel="stylesheet">
+    <link rel="icon" href="res/msc-logo.png">
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+    (function () {
+        if (isMobilePhone())
+            if (getExplore() === "other")
+                window.location.href = "html/index-x5.html";
+            else window.location.href = "html/index-mp.html";
+        else
+            window.location.href = "html/index-pc.html";
+        console.log(isMobilePhone());
+        console.log(getExplore());
+    })();
+
+    function isMobilePhone() {
+        var ua = navigator.userAgent.toLowerCase();
+        return (ua.indexOf("android") > -1 || ua.indexOf("iphone") > -1 || ua.indexOf("mobile") > -1);
+    }
+
+    function getExplore() {
+        var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        var s;
+        (s = ua.match(/rv:([\d.]+)\) like gecko/)) ? Sys.ie = s[1] :
+            (s = ua.match(/msie ([\d\.]+)/)) ? Sys.ie = s[1] :
+                (s = ua.match(/edge\/([\d\.]+)/)) ? Sys.edge = s[1] :
+                    (s = ua.match(/firefox\/([\d\.]+)/)) ? Sys.firefox = s[1] :
+                        (s = ua.match(/(?:opera|opr)\/.([\d\.]+)/)) ? Sys.opera = s[1] :
+                            (s = ua.match(/(?:chrome|crios)\/([\d\.]+)/)) ? Sys.chrome = s[1] :
+                                (s = ua.match(/version\/([\d\.]+).*safari/)) ? Sys.safari = s[1] : 0;
+        // 根据关系进行判断
+        console.log('s:' + s);
+        if (ua.indexOf("browser") > -1) return "other";
+
+        if (Sys.ie) return ('ie');
+        if (Sys.edge) return ('edge');
+        if (Sys.firefox) return ('ff');
+        if (Sys.chrome) return ('chrome');
+        if (Sys.opera) return ('opera');
+        if (Sys.safari) return ('safari');
+
+        return 'other';
+    }
+</script>
+
+</body>
+</html>

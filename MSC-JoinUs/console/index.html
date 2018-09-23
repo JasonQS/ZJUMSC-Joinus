@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浙大MSC纳新</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bs.css" rel="stylesheet">
+    <link rel="icon" href="../res/msc-logo.png">
+</head>
+<body>
+
+<div id="modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <form id="form-verify" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">请输入密码</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input name="pw" type="text" class="form-control" id="form-name" placeholder="4位验证码">
+                </div>
+                <div class="modal-footer d-block">
+                    <p class="float-left m-2 " id="reason"></p>
+                    <button id="submit" type="submit" class="btn btn-primary float-right">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table id="table-info" class="table table-striped table-bordered table-hover text-center" style="display: none">
+    <thead>
+    <tr>
+        <th scope="col">
+            <button class="btn btn-sm btn-primary" id="switch-to-table-time">切换</button>
+        </th>
+        <th scope="col">姓名</th>
+        <th scope="col">学号</th>
+        <th scope="col" colspan="2">部门</th>
+        <th scope="col">性别</th>
+        <th scope="col">校区</th>
+        <th scope="col">专业</th>
+        <th scope="col">邮箱</th>
+        <th scope="col">手机</th>
+        <th scope="col">操作</th>
+    </tr>
+    </thead>
+    <tbody id="table-body-info">
+
+    </tbody>
+</table>
+
+<table id="table-time" class="table table-striped table-bordered table-hover text-center table-responsive"
+       style="display: none">
+    <thead>
+    <tr>
+        <th scope="col">
+            <button class="btn btn-sm btn-primary mx-3" id="switch-to-table-info">切换</button>
+        </th>
+        <th scope="col" colspan="3"></th>
+        <th scope="col" colspan="8">23号</th>
+        <th scope="col" colspan="8">24号</th>
+        <th scope="col" colspan="6">29号</th>
+    </tr>
+    <tr style="word-break: keep-all">
+        <th scope="col">姓名</th>
+        <th scope="col" colspan="2">部门</th>
+        <th scope="col">性别</th>
+        <th class="table-time1" scope="col">13:00</th>
+        <th class="table-time1" scope="col">13:30</th>
+        <th class="table-time1" scope="col">14:00</th>
+        <th class="table-time1" scope="col">14:30</th>
+        <th class="table-time1" scope="col">15:00</th>
+        <th class="table-time1" scope="col">15:30</th>
+        <th class="table-time1" scope="col">16:00</th>
+        <th class="table-time1" scope="col">16:30</th>
+        <th class="table-time2" scope="col">13:00</th>
+        <th class="table-time2" scope="col">13:30</th>
+        <th class="table-time2" scope="col">14:00</th>
+        <th class="table-time2" scope="col">14:30</th>
+        <th class="table-time2" scope="col">15:00</th>
+        <th class="table-time2" scope="col">15:30</th>
+        <th class="table-time2" scope="col">16:00</th>
+        <th class="table-time2" scope="col">16:30</th>
+        <th class="table-time3" scope="col">19:00</th>
+        <th class="table-time3" scope="col">19:30</th>
+        <th class="table-time3" scope="col">20:00</th>
+        <th class="table-time3" scope="col">20:30</th>
+        <th class="table-time3" scope="col">21:00</th>
+        <th class="table-time3" scope="col">21:30</th>
+    </tr>
+
+    </thead>
+    <tbody id="table-body-time">
+
+    </tbody>
+</table>
+
+<footer class="text-center py-5">
+    <small class="d-block text-muted">© 浙江大学 微软学生俱乐部 2018</small>
+    <small class="d-block text-muted">All Rights Reserved</small>
+</footer>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/console.js"></script>
+
+</body>
+</html>

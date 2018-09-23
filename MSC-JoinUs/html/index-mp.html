@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>浙大MSC纳新</title>
+    <meta name="author" content="Jason"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="http://cdn.qsboy.com/httnb/fullpage.css" rel="stylesheet"/>
+    <link href="http://cdn.qsboy.com/httnb/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bs.css" rel="stylesheet">
+    <link rel="icon" href="../res/msc-logo.png">
+
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog p-3 mt-5" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="ml-2" src="../res/msc-logo.png" width="40" height="30">
+                <h5 class="modal-title ml-2" id="exampleModalLabel">MSC</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-5">
+                <p id="modal-body">hello</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary w-25" data-dismiss="modal">好</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fullpage">
+
+    <!--首页-->
+    <div class="section" id="section0">
+        <video id="myVideo" muted autoplay="autoplay" data-autoplay playsinline webkit-playsinline
+               x5-video-player-type="h5">
+            <source src="http://cdn.qsboy.com/httnb/earth-2.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <h2>浙大微软学生俱乐部</h2>
+
+            <div class="blockquote mt-5">
+                纳新咨询可加入QQ群 809478940
+                <br>报名截止时间2018年9月25日
+            </div>
+
+            <ul id="menu" class="list-inline mt-5">
+                <li class="active list-inline-item"><a href="#page2" class="btn btn-outline-light">了解更多</a></li>
+                <li class="list-inline-item"><a href="#page3" class="btn btn-light">开始报名</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--介绍页-->
+    <div class="section" id="section1">
+        <div class="slide" id="slide0">
+            <div class="col-md-8 p-0 mx-auto">
+
+                <div class="card card-mp box-shadow border-dark">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">关于我们</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>微软学生俱乐部是微软亚洲研究院与高校合作培养人才的一种探索。俱乐部本着“学习先进技术，开拓创新思维，体验多元文化，成就一流人才”的宗旨，通过学术讲座、技术沙龙、兴趣小组、大型比赛、参观访问等活动，为会员提供开阔视野，接触最新IT技术，培养管理能力的机会。俱乐部积极与校内外社团组织合作，取得了丰硕的成果。俱乐部的使命是为学生的成长提供良好的平台，为高校顶尖人才培养贡献一份力量。</p>
+                    </div>
+                    <div id="btn-next" class="card-footer">
+                        <p class="d-inline pb-2">部门介绍</p>
+                        <span class="text-right carousel-control-next-icon float-right"
+                              style="opacity: 0.5 ;background-image:url(/res/chevron-right.svg);"
+                              aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slide" id="slide1">
+
+            <div class="col-md-8 p-0 mx-auto">
+
+                <div class="card card-mp box-shadow border-danger align-self-start">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">TG</h4>
+                    </div>
+                    <div class="card-body">
+                        Technology Group 是 MSC 的核心技术部门, 为俱乐部运作提供技术支持, 负责对内的信息维护处理、技术交流以及对外的技术输出, 需要有一定的技术水平.
+                        <br><br><em>看重能力:</em> 以前后端为主, 也欢迎在code其他相关领域有实力的同学.
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-tg" type="button" class="btn btn-lg btn-block btn-danger">加入我们</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slide" id="slide2">
+            <div class="col-md-8 p-0 mx-auto">
+                <div class="card card-mp box-shadow border-success">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">CG</h4>
+                    </div>
+                    <div class="card-body">
+                        Culture Group 负责社团的内部建设, 旨在推广多元的俱乐部文化, 为俱乐部营造温馨和谐的氛围, 是社团提升自我管理、提高凝聚力的核心.
+                        <br><br><em>看重能力:</em> 应急场面的处置, 小活动的策划, 活跃气氛的能力.
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-cg" type="button" class="btn btn-lg btn-block btn-success">加入我们</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide3">
+            <div class="col-md-8 p-0 mx-auto">
+
+                <div class="card card-mp box-shadow border-primary">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">PG</h4>
+                    </div>
+                    <div class="card-body">
+                        Public Group 负责社团的宣传工作, 扩大 MSC 在校内校外的知名度及影响力, 主要内容包括公众号的运营、活动的宣传品设计及各宣传渠道的推送投稿.
+                        <br><br><em>看重能力:</em> 海报制作, 推文文案能力, 摄影
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-pg" type="button" class="btn btn-lg btn-block btn-primary">加入我们</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slide" id="slide4">
+
+            <div class="col-md-8 p-0 mx-auto">
+                <div class="card card-mp box-shadow border-warning">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">OG</h4>
+                    </div>
+                    <div class="card-body">
+                        Operation Group 负责俱乐部的日常运作, 财务 物资 行政管理, 及社团活动的策划执行.
+                        <br><br><em>看重能力:</em> 对大型活动的整体把握, 对社团的管理能力
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-og" type="button" class="btn btn-lg btn-block btn-warning">加入我们</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--报名页-->
+    <div class="section" id="section2">
+
+        <div class="container bg-light p-5 mt-md-5 rounded-1 col-md-8 p-0">
+
+            <a>
+                <img src="../res/ms-logo.png" width="108" height="23" class="d-inline-block align-top">
+            </a>
+
+            <form id="form-signup" class="pt-5">
+                <div class="form-group">
+                    <label for="form-name">姓名</label>
+                    <input name="name" type="text" class="form-control" id="form-name" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="form-school-number">学号</label>
+                    <input name="studentID" type="number" maxlength="10" class="form-control" id="form-school-number">
+                </div>
+                <div class="form-group">
+                    <label for="form-group">Group</label>
+                    <select name="group" class="form-control" id="form-group">
+                        <option value="tg">TG - Technology Group</option>
+                        <option value="cg">CG - Culture Group</option>
+                        <option value="pg">PG - Public Group</option>
+                        <option value="og">OG - Operation Group</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="form-group">第二志愿</label>
+                    <select name="subGroup" class="form-control" id="form-group2">
+                        <option value="--">无</option>
+                        <option value="tg">TG - Technology Group</option>
+                        <option value="cg">CG - Culture Group</option>
+                        <option value="pg">PG - Public Group</option>
+                        <option value="og">OG - Operation Group</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="form-sex">性别</label>
+                    <select name="sex" class="form-control" id="form-sex">
+                        <option value="male">男 ♂</option>
+                        <option value="female">女 ♀</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="form-area">校区</label>
+                    <select name="area" class="form-control" id="form-area">
+                        <option value="zjg">紫金港</option>
+                        <option value="yq">玉泉</option>
+                        <option value="xx">西溪</option>
+                        <option value="hjc">华家池</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="form-major">专业或大类</label>
+                    <input name="major" type="text" class="form-control" id="form-major">
+                </div>
+
+                <div class="form-group">
+                    <label for="form-email">邮箱</label>
+                    <input name="email" type="email" class="form-control" id="form-email" placeholder="foo@bar.com">
+                </div>
+                <div class="form-group">
+                    <label for="form-tel">手机号码</label>
+                    <input name="phone" type="tel" class="form-control" id="form-tel" placeholder="11位长号">
+                </div>
+
+                <label for="form-area">面试时间</label>
+                <select multiple name="time23" class="custom-select my-1" id="form-time-23">
+                    <option selected value="23 00:00 - 00:00">23号 请选择空闲时间段</option>
+                    <option value="23 00:00 - 00:00">23号 下午没空呢</option>
+                    <option value="23 13:00 - 17:00">23号 下午都可以</option>
+                    <option value="23 13:00 - 13:30">23号 13:00 - 13:30</option>
+                    <option value="23 13:30 - 14:00">23号 13:30 - 14:00</option>
+                    <option value="23 14:00 - 14:30">23号 14:00 - 14:30</option>
+                    <option value="23 14:30 - 15:00">23号 14:30 - 15:00</option>
+                    <option value="23 15:00 - 15:30">23号 15:00 - 15:30</option>
+                    <option value="23 15:30 - 16:00">23号 15:30 - 16:00</option>
+                    <option value="23 16:00 - 16:30">23号 16:00 - 16:30</option>
+                    <option value="23 16:30 - 17:00">23号 16:30 - 17:00</option>
+                </select>
+
+                <select multiple name="time24" class="custom-select my-1" id="form-time-24">
+                    <option selected value="24 00:00 - 00:00">24号 请选择空闲时间段</option>
+                    <option value="24 00:00 - 00:00">24号 下午没空呢</option>
+                    <option value="24 13:00 - 17:00">24号 下午都可以</option>
+                    <option value="24 13:00 - 13:30">24号 13:00 - 13:30</option>
+                    <option value="24 13:30 - 14:00">24号 13:30 - 14:00</option>
+                    <option value="24 14:00 - 14:30">24号 14:00 - 14:30</option>
+                    <option value="24 14:30 - 15:00">24号 14:30 - 15:00</option>
+                    <option value="24 15:00 - 15:30">24号 15:00 - 15:30</option>
+                    <option value="24 15:30 - 16:00">24号 15:30 - 16:00</option>
+                    <option value="24 16:00 - 16:30">24号 16:00 - 16:30</option>
+                    <option value="24 16:30 - 17:00">24号 16:30 - 17:00</option>
+                </select>
+
+                <select multiple name="time29" class="custom-select my-1" id="form-time-29">
+                    <option selected value="29 00:00 - 00:00">29号 请选择空闲时间段</option>
+                    <option value="29 00:00 - 00:00">29号 晚上没空呢</option>
+                    <option value="29 19:00 - 22:00">29号 晚上都可以</option>
+                    <option value="29 19:00 - 19:30">29号 19:00 - 19:30</option>
+                    <option value="29 19:30 - 20:00">29号 19:30 - 20:00</option>
+                    <option value="29 20:00 - 20:30">29号 20:00 - 20:30</option>
+                    <option value="29 20:30 - 21:00">29号 20:30 - 21:00</option>
+                    <option value="29 21:00 - 21:30">29号 21:00 - 21:30</option>
+                    <option value="29 21:30 - 22:00">29号 21:30 - 22:00</option>
+                </select>
+
+                <div class="form-group mt-3">
+                    <label for="form-description">自我介绍</label>
+                    <textarea name="comment" class="form-control" id="form-description" rows="10" maxlength="500"
+                              placeholder="随便说点什么 比如兴趣 爱好 特长 社团经历等"></textarea>
+                </div>
+
+                <div onclick="doSubmit()" data-toggle="modal" data-target="#modal"
+                     class="btn btn-primary btn-block my-5 mx-auto">提交
+                </div>
+
+
+            </form>
+        </div>
+
+        <footer class="text-center py-5">
+            <small class="d-block text-muted">© 浙江大学 微软学生俱乐部 2018</small>
+            <small class="d-block text-muted">All Rights Reserved</small>
+        </footer>
+
+    </div>
+
+</div>
+
+<script src="http://cdn.qsboy.com/httnb/jquery.min.js"></script>
+<script src="http://cdn.qsboy.com/httnb/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="http://cdn.qsboy.com/httnb/scrolloverflow.js"></script>
+<script type="text/javascript" src="http://cdn.qsboy.com/httnb/fullpage.js"></script>
+
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>
