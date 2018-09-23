@@ -52,7 +52,7 @@ nginx 处理80端口的静态请求, 后端请求我会在网址里加一个标�
 
 ![成员信息](https://github.com/JasonQS/MSC-Joinus/raw/master/info.jpg)
 
-<p align=center>时间分布</p>
+<p align=center>面试时间分布</p>
 
 ![时间分布](https://github.com/JasonQS/MSC-Joinus/raw/master/time.jpg)
 
