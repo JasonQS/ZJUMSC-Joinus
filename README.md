@@ -1,5 +1,8 @@
 # MSC-Joinus
-浙大微软学生俱乐部2018的纳新网站
+
+浙大微软学生俱乐部2018的纳新网站 
+
+https://msc-joinus.httnb.fun
 
 ### 前端
 bootstrap-v4 fullpage.js
@@ -41,5 +44,13 @@ nginx tomcat mysql
 
 nginx 处理80端口的静态请求, 后端请求我会在网址里加一个标识 , 转发所有带 /j/ 的给 tomcat
 
-### 最终效果
-https://msc-joinus.httnb.fun
+### 后台
+
+<p align=center>成员信息</p>
+
+![成员信息](https://github.com/JasonQS/MSC-Joinus/raw/master/info.jpg)
+
+<p align=center>时间分布</p>
+
+![时间分布](https://github.com/JasonQS/MSC-Joinus/blob/master/time.jpg)
+
